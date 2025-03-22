@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /*universal selector*/
+        *{
+            background-color: #ffffff3b;
+        }
+
+
+        /*Element selector*/
+        p {
+            font-size: 18px;
+        }
+        legend{
+            color: black;
+        }
+
+
+        /*Class selector*/
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+
+        /*ID selector*/
+        #special {
+            color: white;
+            background-color: blue;
+            font-size: 30px;        
+        }
+
+
+        /*Group selector*/
+        h3, p {
+            color: rgba(65, 199, 13, 0.74);
+        }
+
+
+        /*Descendent selector*/
+        div h4 {
+            font-size: 30px;
+        }
+
+
+        /*Child selector*/
+        div > p {
+            color: rgb(237, 16, 16);
+        }
+
+
+        /*Adjacent selector*/
+        h1 + p {
+            color: rgba(52, 52, 246, 0.67);
+        }
+
+
+        /*General Sibling selector*/
+        h1 ~ h4 {
+            color: rgb(255, 174, 24);
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend>Element Selector</legend>
+    <p>This paragraph has a different font size.</p>    
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>Class Selector</legend>
+    <h4 class="highlight">This text is highlighted.</h4>
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>ID Selector</legend>
+    <h5 id="special">This is a unique paragraph with an ID.</h5>
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>Group Selector</legend>
+    <h3>Heading</h3>
+    <p>This paragraph is also green.</p>
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>Descendant Selector</legend>
+    <div>
+        <h1>This paragraph inside a div is purple.</h1>
+        <h4>This paragraph is NOT purple.</h4>
+    </div>
+    
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>Child Selector</legend>
+    <div>
+        <p>This paragraph is red.</p>
+        <span>
+            <p>This paragraph is NOT red (nested inside a span).</p>
+        </span>
+    </div>
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>Adjacent Sibling Selector</legend>
+    <h1>Heading</h1>
+    <p>This paragraph is blue.</p>
+    <p>This paragraph is NOT blue.</p>
+    </fieldset><br>
+
+
+    <fieldset>
+    <legend>General Sibling Selector</legend>
+    <h1>Heading</h1>
+    <h4>This paragraph is orange.</h4>
+    </fieldset>
+</body>
+</html>
